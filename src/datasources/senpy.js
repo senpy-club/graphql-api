@@ -24,4 +24,8 @@ module.exports = class SenpyAPI extends RESTDataSource {
   async getLanguage(language) {
     return this.get(`language/${language}`);
   }
+
+  async getMe() {
+    return this.get("me");
+  }
 };

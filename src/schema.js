@@ -5,10 +5,15 @@ module.exports = gql`
     language: String!
     image: String!
   }
+  
+  type Me {
+    ip: String!
+  }
 
   type Query {
     random: Random
     languages: [String]
     language(language: String!): [String]
+    me: Me
   }
 `;

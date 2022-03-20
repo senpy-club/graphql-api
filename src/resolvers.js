@@ -9,5 +9,8 @@ module.exports = {
     language: async (_source, { language }, { dataSources }) => {
       return dataSources.senpyAPI.getLanguage(language);
     },
+    me: async (_source, {}, { dataSources }) => {
+      return dataSources.senpyAPI.getMe();
+    },
   },
 };
