@@ -28,13 +28,13 @@
   "dependencies": {
     "apollo-datasource-rest": "3.2.0",
     "apollo-server-cloudflare": "3.3.0",
-    "graphql": "^15.6.0"
+    "graphql": "15.6.0"
   },
   "devDependencies": {
-    "@cloudflare/wrangler": "^1.19.9",
-    "eslint": "^8.11.0",
-    "prettier": "^2.4.1",
-    "webpack": "^5.56.0"
+    "@cloudflare/wrangler": "1.19.9",
+    "eslint": "8.11.0",
+    "prettier": "2.4.1",
+    "webpack": "5.56.0"
   },
   "main": "src/index.js"
 }
