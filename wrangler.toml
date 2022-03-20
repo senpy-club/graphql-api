@@ -1,0 +1,21 @@
+# https://developers.cloudflare.com/workers/cli-wrangler/configuration
+
+compatibility_date = "2022-03-20"
+name = "senpy-club-graphql-api"
+route = "graphql.senpy.club/*"
+type = "webpack"
+webpack_config = "webpack.config.js"
+workers_dev = true
+zone_id = "6cfc06f5d960d7cb0cd823528399cbf5"
+
+[[kv-namespaces]]
+binding = "WORKERS_GRAPHQL_CACHE"
+id = "5c321fd07abf4f20946c750dab02985e"
+preview_id = "5c321fd07abf4f20946c750dab02985e"
+
+[build]
+command = "npm install && npm run build"
+
+[build.upload]
+format = "modules"
+main = "./src/index.js"

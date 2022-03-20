@@ -1,0 +1,9 @@
+# Node
+node_modules/
+
+# Cloudflare
+worker/
+dist/
+
+# IDE
+.idea/

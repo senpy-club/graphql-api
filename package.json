@@ -1,0 +1,40 @@
+{
+  "name": "senpy-club-graphql-api",
+  "author": {
+    "url": "https://github.com/Fuwn",
+    "email": "contact@fuwn.me",
+    "name": "Fuwn"
+  },
+  "homepage": "https://github.com/senpy-club/graphql-api",
+  "readme": "https://github.com/senpy-club/graphql-api#readme",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "graphql",
+    "javascript",
+    "cloudflare",
+    "workers",
+    "anime",
+    "senpy"
+  ],
+  "description": "GraphQL access to The Senpy Club API",
+  "repository": "https://github.com/senpy-club/graphql-api",
+  "private": true,
+  "scripts": {
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^3.2.0",
+    "apollo-server-cloudflare": "^3.3.0",
+    "graphql": "^15.6.0"
+  },
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.19.9",
+    "eslint": "^8.11.0",
+    "prettier": "^2.4.1",
+    "webpack": "^5.56.0"
+  },
+  "main": "src/index.js"
+}
