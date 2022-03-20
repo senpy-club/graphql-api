@@ -12,6 +12,9 @@ query {
     language
     image
   }
+  me: me {
+    ip
+  }
   languages
   language: language(language: "C")
 }
