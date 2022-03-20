@@ -33,7 +33,7 @@
   "devDependencies": {
     "@cloudflare/wrangler": "1.19.9",
     "eslint": "8.11.0",
-    "prettier": "2.4.1",
+    "prettier": "2.6.0",
     "webpack": "5.56.0"
   },
   "main": "src/index.js"
