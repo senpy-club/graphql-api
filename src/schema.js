@@ -9,11 +9,18 @@ module.exports = gql`
   type Me {
     ip: String!
   }
+  
+  type Boys {
+    random: Random!
+    languages: [String!]!
+    language(language: String!): [String!]!
+  }
 
   type Query {
-    random: Random
-    languages: [String]
-    language(language: String!): [String]
-    me: Me
+    random: Random!
+    languages: [String!]!
+    language(language: String!): [String!]!
+    me: Me!
+    boys: Boys!
   }
 `;

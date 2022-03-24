@@ -12,5 +12,12 @@ module.exports = {
     me: async (_source, {}, { dataSources }) => {
       return dataSources.senpyAPI.getMe();
     },
+    boys: async (_source, {}, { dataSources }) => {
+      return {
+        random: dataSources.senpyAPI.getBoysRandom(),
+        languages: dataSources.senpyAPI.getBoysLanguages(),
+        language: ({ language }) => dataSources.senpyAPI.getBoysLanguage(language),
+      };
+    },
   },
 };

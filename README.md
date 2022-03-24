@@ -17,6 +17,17 @@ query {
   }
   languages
   language: language(language: "C")
+  boys: boys {
+    random: random {
+      language
+      image
+    }
+    me: me {
+      ip
+    }
+    languages
+    language: language(language: "C")
+  }
 }
 ```
 

@@ -17,12 +17,24 @@ module.exports = class SenpyAPI extends RESTDataSource {
     return this.get("random");
   }
 
+  async getBoysRandom() {
+    return this.get("boys/random");
+  }
+
   async getLanguages() {
     return this.get("languages");
   }
 
+  async getBoysLanguages() {
+    return this.get("boys/languages");
+  }
+
   async getLanguage(language) {
     return this.get(`language/${language}`);
+  }
+
+  async getBoysLanguage(language) {
+    return this.get(`boys/language/${language}`);
   }
 
   async getMe() {
