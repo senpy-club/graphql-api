@@ -31,7 +31,7 @@
     "graphql": "15.6.0"
   },
   "devDependencies": {
-    "@cloudflare/wrangler": "1.19.9",
+    "@cloudflare/wrangler": "1.21.0",
     "eslint": "8.11.0",
     "prettier": "2.6.0",
     "webpack": "5.56.0"
